@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<div>
 <head>
       <title>Joshua Jones </title>
       <meta charset="utf-8">
@@ -22,23 +22,31 @@
             object-fit: cover;
         }
         body {background-color: #3da9fc}
-        social-media{ color: #094067}
+        .item{ 
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            max-width: 640px;
+        }
+        .links{ 
+            display: flex;
+            text-align: center
+            background: #f9bc60 }
       </style>
 </head>
-<body>
+<div class="item">
      <div class="self-portrait"> <img src="JoshuaJSelfPortrait.jpeg" alt="Joshua Jones Headshot" class="banner-image">
       </div> 
       <div class="name">Joshua Jones</div>
       <div class="social-media">
-          <a href="https://www.linkedin.com/in/joshualamorjones/" target="_blank">LinkedIn</a>
-          <img src="./thumbnails/linkedinlogo.png" alt="LinkedIn Icon" class="thumbnails">
-
-          <a href="https://www.instagram.com/joshlamou/" target="_blank">Instagram</a>
-          <img src="./thumbnails/IGLogo.webp" alt="Instagram Icon" class="thumbnails">
-
-          <a href="https://github.com/joshlamou/" target="_blank">GitHub</a>
-          <img src="./thumbnails/GithubIcon.png" alt="Github Icon" class="thumbnails">
+          <div><img src="./thumbnails/linkedinlogo.png" alt="LinkedIn Icon" class="thumbnails"></div>
+          <div><img src="./thumbnails/IGLogo.webp" alt="Instagram Icon" class="thumbnails"></div>
+          <div><img src="./thumbnails/GithubIcon.png" alt="Github Icon" class="thumbnails"></div>
       </div>
+      <div class="links">
+        <div> <a href="https://www.linkedin.com/in/joshualamorjones/" target="_blank">LinkedIn</a> </div>
+        <div> <a href="https://www.instagram.com/joshlamou/" target="_blank" >Instagram</a> </div>
+        <div> <a href="https://github.com/joshlamou/" target="_blank" >GitHub</a> </div> </div> </div>
   </body>
   
 </html>
